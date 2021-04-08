@@ -1,0 +1,23 @@
+
+
+
+/* .mat-card {
+    max-width: 300px;
+    margin: auto;
+    background-color: rgb(216, 216, 218);
+}
+.mat-card-avatar {
+    background-image: url("../../../assets//image/5.webp");
+    background-size: cover;
+} */
+
+/* .mat-card- */
+
+/* .container{
+    height: 100vh;
+} */
+
+.search-results {
+    height: 100vh;
+    overflow: scroll;
+  }

@@ -1,0 +1,23 @@
+
+.mat-sidenav-container{
+    height: 100%;
+}
+
+/* .mat-sidenav, .mat-sidenav-content {
+    padding: 1rem;
+} */
+
+.mat-sidenav{
+    background-color: rgb(251, 253, 255);
+    width: 200px;
+    padding-top: 5%;
+    /* text-align: center; */
+}
+
+/* .mat-list-item{
+    background-color: hotpink;
+} */
+
+input:focus{
+    outline: none;
+}

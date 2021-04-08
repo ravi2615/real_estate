@@ -1,0 +1,51 @@
+
+<div class="dialog">
+    <div class="container" fxFlex="100%"  >
+        
+        <mat-toolbar>
+            <span>Signup</span>
+            <button mat-stroked-button color="warn" (click)="onClose()" tabindex="-1">
+                <mat-icon>clear</mat-icon>
+            </button>
+        </mat-toolbar>
+        <!-- <h2 mat-dialog-title>Login</h2> -->
+        <form class="form" [formGroup]="Form" (ngSubmit)="onSubmit()">
+    <mat-dialog-content>
+
+        <mat-form-field appearance="fill">
+            <mat-label><mat-icon>person</mat-icon> Enter your name </mat-label>
+            <input matInput formControlName="name" class="form-control" placeholder="Enter Name"  required>
+            
+            <!-- <mat-errorr *ngIf="!Form.get('email').valid && Form.get('email').touched" class="form-text w-100 text-danger">Please Enter Email</mat-errorr><br><br> -->
+          </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label><mat-icon>email</mat-icon> Enter your email </mat-label>
+          <input matInput formControlName="email" class="form-control" placeholder="Enter Email"  required>
+          
+          <!-- <mat-errorr *ngIf="!Form.get('email').valid && Form.get('email').touched" class="form-text w-100 text-danger">Please Enter Email</mat-errorr><br><br> -->
+        </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label><mat-icon>lock</mat-icon> Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" class="form-control" placeholder="Password" required>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label><mat-icon><span class="material-icons-outlined">
+            place
+            </span></mat-icon> Enter your address </mat-label>
+        <input matInput formControlName="address" class="form-control" placeholder="Enter Address"  required>
+        
+        <!-- <mat-errorr *ngIf="!Form.get('email').valid && Form.get('email').touched" class="form-text w-100 text-danger">Please Enter Email</mat-errorr><br><br> -->
+      </mat-form-field>
+    </mat-dialog-content>
+      
+    <mat-dialog-actions>
+        <button type="submit" mat-raised-button color="primary">Signup</button>
+        <a (click)="Login()" mat-button color="primary">have account? Login</a>
+    </mat-dialog-actions>
+      </form>
+    </div>
+    </div>
