@@ -27,4 +27,10 @@
   img{
       background-image: url("../../../assets/image/dummy.jpg") !important;
       background-size: 100% 100%;
+      z-index: -1;
   }
+
+  /* .mat-card-avatar{
+      background-image: url("../../../assets/image/5.webp");
+      background-size: 100% 100%;
+  } */
