@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
   }
 
   Signup(){
+    this.onClose();
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;

@@ -1,10 +1,9 @@
-
 .search-results {
-    background-color: #dfe6e9;
+    background-color: #eee;
     width: 100%;
-    height: auto;
-    padding: 16px;
-    overflow-x: scroll; /* Add the ability to scroll */
+    height: 100vh;
+    /* border: 1px dotted black; */
+    overflow-y: scroll; /* Add the ability to scroll */
   }
 .search-results::-webkit-scrollbar {
     display: none;
@@ -16,15 +15,6 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.recommended{
-    position: fixed; 
-    z-index:99; 
-    background-color:#f5a19b;
-    padding: 0 10px;
-    margin-left: -20px;
-    border-radius: 10%;
-}
   img{
       background-image: url("../../../assets/image/dummy.jpg") !important;
-      background-size: 100% 100%;
   }

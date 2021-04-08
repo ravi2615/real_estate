@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -15,6 +16,9 @@ import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { PropertyComponent } from './components/property/property.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    FooterComponent
+    FooterComponent,
+    PropertyComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     ScrollingModule,
     ReactiveFormsModule,
     InfiniteScrollModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

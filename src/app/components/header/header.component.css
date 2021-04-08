@@ -1,0 +1,40 @@
+.search-results {
+    background-color: #dfe6e9;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    overflow-x: scroll; /* Add the ability to scroll */
+  }
+.search-results::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.search-results {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.mat-card {
+    position: relative; 
+}
+
+.mat-card::before {    
+      content: "";
+      background-image: url('../../../assets/image/5.webp');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+}
+.mat-card:hover{
+    cursor: pointer;
+}
+.mat-card-title {
+  position: relative;
+  color: #ffffff; 
+  text-align: center;
+}

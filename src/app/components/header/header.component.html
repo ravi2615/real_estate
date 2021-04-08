@@ -1,0 +1,14 @@
+
+<div fxFlexLayout="row" fxFlex="100" class="search-results"> 
+
+    <div fxLayoutAlign="center" fxLayoutGap="2%">
+  
+      <div *ngFor="let obj of List">
+<mat-card routerLink="/property" class="mat-elevation-z4">
+   
+      <mat-card-title>{{obj.title}}</mat-card-title>
+      
+  </mat-card>
+  </div>
+  </div>
+  </div>

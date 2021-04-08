@@ -1,17 +1,16 @@
 
 
  <mat-sidenav-container>
-     <mat-sidenav mode="over" [(opened)]="opened" fxLayout="column" fxLayoutAlign="space-between center">
+     <mat-sidenav mode="over" #sidenav role="navigation" fxLayout="column" fxLayoutAlign="space-between center">
         <mat-label 
         style="text-align:center;
                 z-index:999;position:fixed; 
-                background-color: #4d88e0;
+                background-color: #bdc3c7;
                 height:60px;width:200px;
                 padding-top: 40px;
                 margin-top:-20px;
-                color:white;
                 font-size:24px">Hey User</mat-label>
-        <mat-nav-list style="margin-top: 100px;z-index:1; font-size:20px">
+        <mat-nav-list style="margin-top: 100px;z-index:1; font-size:20px;">
             <a mat-list-item href="#" color="primary"> Link1 </a>
             <a mat-list-item href="#" color="primary"> Link2 </a>
             <a mat-list-item href="#" color="primary"> Link3 </a>
@@ -20,28 +19,20 @@
             <a mat-list-item href="#" color="primary"> Link6 </a>
             <a mat-list-item href="#" color="primary"> Link7 </a>
             <a mat-list-item href="#" color="primary"> Link8 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
-            <a mat-list-item href="#" color="primary"> Link1 </a>
         </mat-nav-list>
      </mat-sidenav>
     <mat-sidenav-content fxLayout="column">
-         <mat-toolbar color="primary" style="position: fixed; z-index:999; padding-top: 10px;" >
+         <mat-toolbar color="primary"
+         style= "padding-top:10px" >
          <mat-toolbar-row
          fxLayout="row"
          fxLayoutGap="2%">
             <div fxFlex="60">
-                <button mat-icon-button (click)="opened=!opened" 
+                <button mat-icon-button (click)="sidenav.toggle()"
                 fxHide.gt-md>
                     <mat-icon>menu</mat-icon>
                 </button>
-                <span>My App</span>
+                <span><a href="/" routerLink="/">My App</a></span>
             </div>  
             <div
             fxLayoutAlign="end center"
@@ -52,7 +43,7 @@
             >
             <form class="example-form" [formGroup]="Form" (ngSubmit)="onSubmit()" *ngIf="searchFields.style.display !== 'none'" >
                 <!-- <mat-form-field class="example-full-width"> -->
-                  <input type="text" formControlName="searchItem" placeholder="Search"  style="width: 110%; height:30px; font-size:16px" required>
+                  <input type="text" formControlName="searchItem" placeholder="Search"  style="width: 100%; height:30px; font-size:16px" required>
                 <!-- </mat-form-field> -->
               </form>
             </div>  
@@ -118,8 +109,7 @@
                 <button mat-raised-button type="submit" (click)="doSearch()">search</button>
             </mat-toolbar-row>
         </mat-toolbar>
-        <main style="margin-top: 4.5rem;">
-            <app-home></app-home>
+        <main>
             <router-outlet></router-outlet>
             <app-footer></app-footer>
         </main>

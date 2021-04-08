@@ -13,7 +13,6 @@ import { MatTabsModule} from '@angular/material/tabs';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatBadgeModule } from '@angular/material/badge';
 
-
 const matrial = [
   MatButtonModule,
   MatToolbarModule,
@@ -27,7 +26,7 @@ const matrial = [
   MatInputModule,
   MatTabsModule,
   MatProgressSpinnerModule,
-  MatBadgeModule
+  MatBadgeModule,
 ]
 
 @NgModule({

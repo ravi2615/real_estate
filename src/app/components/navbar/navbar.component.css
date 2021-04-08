@@ -1,6 +1,7 @@
 
 .mat-sidenav-container{
     height: 100%;
+    background-color: #dfe6e9;
 }
 
 /* .mat-sidenav, .mat-sidenav-content {
@@ -17,7 +18,11 @@
 /* .mat-list-item{
     background-color: hotpink;
 } */
-
+a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
 input:focus{
     outline: none;
 }
