@@ -40,6 +40,11 @@ img{
 } */
 .mat-card:hover{
     cursor: pointer;
+    box-shadow: 0 0 5px rgb(170, 170, 170);
+    background-color: #F2F7FF;
+}
+.mat-card:focus{
+  outline-color: #fff;
 }
 .mat-card-title {
   position: relative;

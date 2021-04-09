@@ -1,0 +1,57 @@
+
+<div fxFlexLayout="cloumn" fxFlex="100" class="search-results"> 
+<div fxLayoutAlign="center" >
+   
+  <div *ngFor="let obj of dataAll; index as i">
+    <mat-card *ngIf="i==id" class="mat-elevation-z0" style="margin: 10px; border-radius:5%;background-color: #F2F7FF;line-height:16px">
+      <mat-card-header >
+        
+      </mat-card-header>
+      <div style="border-radius: 5%;padding: 5px">
+      <img  mat-card-image src="{{obj.url}}">
+      </div>
+      <div fxFlexLayout="row"  fxLayoutAlign="space-between center">
+        <div>
+          <mat-card-title style="font-size: 18px;">{{obj.localities}}</mat-card-title>
+          <mat-card-subtitle>{{obj.price}}/month</mat-card-subtitle>
+          <mat-card-subtitle>{{obj.subtitle}}</mat-card-subtitle>
+        </div>
+        <div ><mat-icon style="cursor:pointer;border: 2px solid #FF97B5;border-radius:50%; background-color: #FF97B5;color:#fff;padding:5px;">favorite</mat-icon></div>
+      </div>
+    </mat-card>
+  </div>
+</div>
+
+
+<div>
+  <div fxLayoutAlign="center" >
+    <h1>Home Features</h1>
+</div>
+</div>
+<div fxLayout="column" fxLayoutAlign="center"  style="margin:8px">
+  <h2 style="width: 100%;"><mat-icon>living</mat-icon>Living Room
+    <hr style="color: #FF97B5;"></h2>
+  <div fxLayoutAlign.gt-xs="space-between center"  style="text-align: center;background-color:#fff;padding:25px;border-radius:10px">
+    <img src="../../../assets/image/5.webp" alt="">
+    <!-- <div> -->
+      <h4><mat-icon>chair</mat-icon> Sofa</h4>
+      <h4><mat-icon>tv</mat-icon> TV</h4>
+      <h4><mat-icon><span class="material-icons">
+        local_laundry_service
+        </span></mat-icon> Washing Machine</h4>
+    <!-- </div> -->
+  </div>
+</div>
+<div fxLayout="column" fxLayoutAlign="center"  style="margin:8px">
+  <h2 style="width: 100%;"><mat-icon>kitchen</mat-icon>Kitchen
+    <hr style="color: #FF97B5;"></h2>
+  <div fxLayoutAlign.gt-xs="space-between center"  style="text-align: center;background-color:#fff;padding:25px;border-radius:10px">
+    <img src="../../../assets/image/5.webp" alt="">
+    <!-- <div> -->
+      <h4><mat-icon>chair_alt</mat-icon> Dinning Table</h4>
+      <h4><mat-icon>fridge</mat-icon> Fridge</h4>
+      <h4><mat-icon></mat-icon> Gas Stove</h4>
+    <!-- </div> -->
+  </div>
+</div>
+  </div>

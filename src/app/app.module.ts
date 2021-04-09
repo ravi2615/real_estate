@@ -18,6 +18,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { PropertyComponent } from './components/property/property.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ViewPropertyComponent } from './components/view-property/view-property.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { HeaderComponent } from './components/header/header.component';
     RegisterComponent,
     FooterComponent,
     PropertyComponent,
-    HeaderComponent
+    HeaderComponent,
+    ViewPropertyComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,9 @@
 .mat-toolbar{
     background-color: #8cb8ff !important;
     color: #2F2D51;
+    /* position: fixed; */
 }
+
 
 /* .mat-list-item{
     background-color: hotpink;
@@ -38,16 +40,16 @@ input:focus{
 
 
 @media only screen and (max-width: 1280px) {
-    /* .mat-toolbar{
-        background-color: #8cb8ff !important;
-        color: #2F2D51;
-    } */
+
     a{
         color: #2F2D51;
     }
+    /* .mat-toolbar{
+        position: relative;
+    } */
     .mat-toolbar-row{
         padding: 10px;
-        background-color: #8cb8ff !important;
+        background-color: #F2F7FF !important;
         z-index: 999;
     }
   }

@@ -1,4 +1,4 @@
-
+<div class="home">
 <div fxFlexLayout="cloumn">
   <app-header></app-header>
   <mat-toolbar fxFlexLayout="row" style="background-color: #F2F7FF !important;">
@@ -24,12 +24,12 @@
           
         </mat-card-header>
         <div style="border-radius: 5%;padding: 5px">
-        <img mat-card-image src="{{obj.url}}">
+        <img [routerLink]="['/viewproperty', obj._id]" mat-card-image src="{{obj.url}}">
         </div>
         <div fxFlexLayout="row"  fxLayoutAlign="space-between center">
           <div>
             <mat-card-title style="font-size: 18px;">{{obj.localities}}</mat-card-title>
-            <mat-card-subtitle>{{obj.price}}</mat-card-subtitle>
+            <mat-card-subtitle>{{obj.price}}/month</mat-card-subtitle>
             <mat-card-subtitle>{{obj.subtitle}}</mat-card-subtitle>
           </div>
           <div ><mat-icon style="cursor:pointer;border: 2px solid #FF97B5;border-radius:50%; background-color: #FF97B5;color:#fff;padding:5px;">favorite</mat-icon></div>
@@ -37,4 +37,5 @@
       </mat-card>
     </div>
   </div>
+</div>
 </div>
