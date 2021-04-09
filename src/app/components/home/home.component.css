@@ -1,6 +1,6 @@
 
 .search-results {
-    background-color: #dfe6e9;
+    background-color: #F2F7FF;
     width: 100%;
     height: auto;
     padding: 16px;
@@ -16,14 +16,6 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.recommended{
-    position: fixed; 
-    z-index:99; 
-    background-color:#f5a19b;
-    padding: 0 10px;
-    margin-left: -20px;
-    border-radius: 10%;
-}
   img{
       background-image: url("../../../assets/image/dummy.jpg") !important;
       background-size: 100% 100%;

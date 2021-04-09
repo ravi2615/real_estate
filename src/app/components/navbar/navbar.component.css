@@ -1,7 +1,7 @@
 
 .mat-sidenav-container{
     height: 100%;
-    background-color: #dfe6e9;
+    background-color: #F2F7FF;
 }
 
 /* .mat-sidenav, .mat-sidenav-content {
@@ -9,20 +9,45 @@
 } */
 
 .mat-sidenav{
-    background-color: rgb(251, 253, 255);
+    background-color: #F2F7FF;
     width: 200px;
     padding-top: 5%;
     /* text-align: center; */
+}
+.mat-toolbar{
+    background-color: #8cb8ff !important;
+    color: #2F2D51;
 }
 
 /* .mat-list-item{
     background-color: hotpink;
 } */
 a{
-    color: #fff;
+    color: #2F2D51;
     font-weight: bold;
     text-decoration: none;
+    letter-spacing: 3px;
+}
+input{
+    border: none;
 }
 input:focus{
     outline: none;
 }
+
+
+
+@media only screen and (max-width: 1280px) {
+    /* .mat-toolbar{
+        background-color: #8cb8ff !important;
+        color: #2F2D51;
+    } */
+    a{
+        color: #2F2D51;
+    }
+    .mat-toolbar-row{
+        padding: 10px;
+        background-color: #8cb8ff !important;
+        z-index: 999;
+    }
+  }

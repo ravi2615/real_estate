@@ -1,8 +1,9 @@
 .search-results {
-    background-color: #dfe6e9;
-    width: 100%;
-    height: auto;
-    padding: 16px;
+    background-color: #fff;
+    padding: 14px;
+    padding-bottom: 50px;
+    margin: 30px;
+    border-radius: 20px;
     overflow-x: scroll; /* Add the ability to scroll */
   }
 .search-results::-webkit-scrollbar {
@@ -17,6 +18,7 @@
 
 .mat-card {
     position: relative; 
+    border-radius: 20px;
 }
 
 .mat-card::before {    
@@ -29,6 +31,7 @@
       bottom: 0px;
       left: 0px;
       opacity: 0.75;
+      border-radius: 20px;
 }
 .mat-card:hover{
     cursor: pointer;

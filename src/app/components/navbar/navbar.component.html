@@ -5,11 +5,11 @@
         <mat-label 
         style="text-align:center;
                 z-index:999;position:fixed; 
-                background-color: #bdc3c7;
+                background-color: #93D8F8;
                 height:60px;width:200px;
                 padding-top: 40px;
                 margin-top:-20px;
-                font-size:24px">Hey User</mat-label>
+                font-size:24px"><mat-icon>account_circle</mat-icon>  Hey User</mat-label>
         <mat-nav-list style="margin-top: 100px;z-index:1; font-size:20px;">
             <a mat-list-item href="#" color="primary"> Link1 </a>
             <a mat-list-item href="#" color="primary"> Link2 </a>
@@ -22,8 +22,7 @@
         </mat-nav-list>
      </mat-sidenav>
     <mat-sidenav-content fxLayout="column">
-         <mat-toolbar color="primary"
-         style= "padding-top:10px" >
+         <mat-toolbar color="primary">
          <mat-toolbar-row
          fxLayout="row"
          fxLayoutGap="2%">
@@ -95,7 +94,7 @@
                     </button>
 
                     <mat-menu #menu="matMenu">
-                        <button mat-menu-item (click)="openLogin()">Login</button>
+                        <button mat-menu-item (click)="openLogin()" color="primary">Login</button>
                     </mat-menu>
 
                 </div>
