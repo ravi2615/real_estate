@@ -1,6 +1,5 @@
 .search-results {
-    background-color: #eee;
-    width: 100%;
+    background-color: #F2F7FF;
     height: 100vh;
     /* border: 1px dotted black; */
     overflow-y: scroll; /* Add the ability to scroll */
