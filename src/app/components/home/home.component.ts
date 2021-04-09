@@ -8,17 +8,17 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class HomeComponent implements OnInit {
    
-  dataAll: {title: string, subtitle: string, content: string, url: string}[] = [
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
-    {title: 'Title', subtitle: 'Subtitle', content: 'Content here', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+  dataAll: {localities: string, price:number, subtitle: string, url: string}[] = [
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
+    {localities: 'localities', price: 2000, subtitle: 'Semi Furnished 2 BHK', url: 'http://www.sweethome3d.com/images/gallery2015/MaxHan.jpg'},
   ];
   
   constructor() {

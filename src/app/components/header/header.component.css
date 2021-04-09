@@ -16,14 +16,19 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.mat-card {
-    position: relative; 
-    border-radius: 20px;
+/* .mat-card {
+    /* position: relative;  *
+    width: 50px;
+    border-radius: 6px;
 }
-
+img{
+  width: 50px;
+  height: 50px;
+} */
+/* 
 .mat-card::before {    
       content: "";
-      background-image: url('../../../assets/image/5.webp');
+      background-image: url('../../../assets/image/dummy.jpg');
       background-size: cover;
       position: absolute;
       top: 0px;
@@ -31,13 +36,13 @@
       bottom: 0px;
       left: 0px;
       opacity: 0.75;
-      border-radius: 20px;
-}
+      border-radius: 5px;
+} */
 .mat-card:hover{
     cursor: pointer;
 }
 .mat-card-title {
   position: relative;
-  color: #ffffff; 
+  color: #000; 
   text-align: center;
 }
